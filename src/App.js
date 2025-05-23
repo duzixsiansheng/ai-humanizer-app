@@ -114,11 +114,6 @@ function App() {
       alert('Please enter some text to humanize.');
       return;
     }
-    
-    if (inputText.length < 50) {
-      alert('Text must be at least 50 characters long for processing.');
-      return;
-    }
 
     if (inputText.length > 15000) {
       alert('Text exceeds the maximum limit of 15,000 characters. Please reduce the text length.');
