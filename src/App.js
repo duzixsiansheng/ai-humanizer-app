@@ -399,6 +399,400 @@ function App() {
           </div>
         )}
 
+        {currentPage === 'contact' && (
+          <div className="min-h-screen bg-gray-50 py-12">
+            <div className="max-w-4xl mx-auto px-4">
+              <div className="text-center mb-12">
+                <h1 className="text-4xl font-bold text-gray-900 mb-4">Contact Us</h1>
+                <p className="text-xl text-gray-600">Have questions or feedback? We'd love to hear from you</p>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-12">
+                <div>
+                  <h2 className="text-2xl font-bold text-gray-900 mb-6">Get in Touch</h2>
+                  <div className="space-y-6">
+                    <div className="flex items-start">
+                      <Mail className="h-6 w-6 text-blue-600 mt-1 mr-4" />
+                      <div>
+                        <h3 className="font-semibold text-gray-900">Email</h3>
+                        <p className="text-gray-600">support@humanizeai.com</p>
+                        <p className="text-sm text-gray-500 mt-1">We'll respond within 24 hours</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start">
+                      <Phone className="h-6 w-6 text-blue-600 mt-1 mr-4" />
+                      <div>
+                        <h3 className="font-semibold text-gray-900">Phone</h3>
+                        <p className="text-gray-600">+1 (555) 123-4567</p>
+                        <p className="text-sm text-gray-500 mt-1">Monday - Friday, 9AM - 6PM EST</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start">
+                      <MapPin className="h-6 w-6 text-blue-600 mt-1 mr-4" />
+                      <div>
+                        <h3 className="font-semibold text-gray-900">Address</h3>
+                        <p className="text-gray-600">
+                          123 AI Innovation Drive<br />
+                          San Francisco, CA 94105<br />
+                          United States
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="mt-8 p-6 bg-blue-50 rounded-xl">
+                    <h3 className="font-semibold text-gray-900 mb-2">Enterprise Solutions</h3>
+                    <p className="text-gray-600 text-sm mb-3">
+                      Looking for custom AI humanization solutions for your business?
+                    </p>
+                    <button className="text-blue-600 hover:text-blue-800 font-semibold text-sm">
+                      Contact our enterprise team →
+                    </button>
+                  </div>
+                </div>
+
+                <div className="bg-white rounded-2xl shadow-xl p-8">
+                  <h2 className="text-2xl font-bold text-gray-900 mb-6">Send us a Message</h2>
+                  <form className="space-y-6">
+                    <div className="grid grid-cols-2 gap-4">
+                      <div>
+                        <label className="block text-sm font-medium text-gray-700 mb-2">First Name</label>
+                        <input
+                          type="text"
+                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                          placeholder="John"
+                        />
+                      </div>
+                      <div>
+                        <label className="block text-sm font-medium text-gray-700 mb-2">Last Name</label>
+                        <input
+                          type="text"
+                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                          placeholder="Doe"
+                        />
+                      </div>
+                    </div>
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                      <input
+                        type="email"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                        placeholder="your@email.com"
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-2">Subject</label>
+                      <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500">
+                        <option>General Inquiry</option>
+                        <option>Technical Support</option>
+                        <option>Billing Question</option>
+                        <option>Feature Request</option>
+                        <option>Partnership</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                      <textarea
+                        rows="4"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                        placeholder="Tell us how we can help you..."
+                      ></textarea>
+                    </div>
+                    <button
+                      type="submit"
+                      className="w-full bg-blue-600 text-white py-3 px-4 rounded-lg hover:bg-blue-700 font-semibold"
+                    >
+                      Send Message
+                    </button>
+                  </form>
+                </div>
+              </div>
+
+              <div className="mt-16 bg-white rounded-2xl shadow-xl p-8">
+                <h2 className="text-3xl font-bold text-center text-gray-900 mb-8">Common Questions</h2>
+                <div className="grid md:grid-cols-2 gap-8">
+                  <div>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2">How accurate is the AI humanizer?</h3>
+                    <p className="text-gray-600 mb-4">
+                      Our AI humanizer has a 99.9% success rate in making AI text undetectable while maintaining quality and meaning.
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2">What file formats do you support?</h3>
+                    <p className="text-gray-600 mb-4">
+                      We support plain text, Word documents (.docx), PDFs, and direct text input through our web interface.
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2">Is my data secure?</h3>
+                    <p className="text-gray-600 mb-4">
+                      Yes, we use enterprise-grade security. Your text is processed securely and never stored permanently on our servers.
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2">Do you offer API access?</h3>
+                    <p className="text-gray-600 mb-4">
+                      Yes! Our Business plan includes API access for seamless integration with your existing workflows.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {currentPage === 'dashboard' && isLoggedIn && (
+          <div className="min-h-screen bg-gray-50 py-8">
+            <div className="max-w-7xl mx-auto px-4">
+              <div className="mb-8">
+                <h1 className="text-3xl font-bold text-gray-900 mb-2">Welcome back, {user?.name}</h1>
+                <p className="text-gray-600">Manage your projects and track your usage</p>
+              </div>
+
+              <div className="grid md:grid-cols-4 gap-6 mb-8">
+                <div className="bg-white rounded-xl shadow-lg p-6">
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <p className="text-sm text-gray-600">Current Plan</p>
+                      <p className="text-2xl font-bold text-gray-900">{user?.plan}</p>
+                    </div>
+                    <Star className="h-8 w-8 text-yellow-500" />
+                  </div>
+                </div>
+                <div className="bg-white rounded-xl shadow-lg p-6">
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <p className="text-sm text-gray-600">Credits Remaining</p>
+                      <p className="text-2xl font-bold text-gray-900">
+                        {(user?.creditsTotal - user?.creditsUsed).toLocaleString()}
+                      </p>
+                    </div>
+                    <Zap className="h-8 w-8 text-blue-500" />
+                  </div>
+                </div>
+                <div className="bg-white rounded-xl shadow-lg p-6">
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <p className="text-sm text-gray-600">Credits Used</p>
+                      <p className="text-2xl font-bold text-gray-900">{user?.creditsUsed.toLocaleString()}</p>
+                    </div>
+                    <CreditCard className="h-8 w-8 text-green-500" />
+                  </div>
+                </div>
+                <div className="bg-white rounded-xl shadow-lg p-6">
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <p className="text-sm text-gray-600">Total Projects</p>
+                      <p className="text-2xl font-bold text-gray-900">{user?.projects.length}</p>
+                    </div>
+                    <FileText className="h-8 w-8 text-purple-500" />
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white rounded-xl shadow-lg p-6 mb-8">
+                <h2 className="text-xl font-bold text-gray-900 mb-4">Credit Usage</h2>
+                <div className="flex items-center justify-between mb-2">
+                  <span className="text-sm text-gray-600">
+                    Used {user?.creditsUsed.toLocaleString()} of {user?.creditsTotal.toLocaleString()} credits
+                  </span>
+                  <span className="text-sm text-gray-600">
+                    {Math.round((user?.creditsUsed / user?.creditsTotal) * 100)}%
+                  </span>
+                </div>
+                <div className="w-full bg-gray-200 rounded-full h-3">
+                  <div 
+                    className="bg-blue-600 h-3 rounded-full transition-all duration-300"
+                    style={{ width: `${(user?.creditsUsed / user?.creditsTotal) * 100}%` }}
+                  ></div>
+                </div>
+              </div>
+
+              <div className="grid md:grid-cols-3 gap-6 mb-8">
+                <button 
+                  onClick={() => setCurrentPage('home')}
+                  className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow text-left"
+                >
+                  <Zap className="h-8 w-8 text-blue-600 mb-3" />
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">Humanize Text</h3>
+                  <p className="text-gray-600 text-sm">Transform AI text to human-like content</p>
+                </button>
+                <button 
+                  onClick={() => setCurrentPage('pricing')}
+                  className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow text-left"
+                >
+                  <CreditCard className="h-8 w-8 text-green-600 mb-3" />
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">Upgrade Plan</h3>
+                  <p className="text-gray-600 text-sm">Get more credits and advanced features</p>
+                </button>
+                <div className="bg-white rounded-xl shadow-lg p-6">
+                  <Settings className="h-8 w-8 text-gray-600 mb-3" />
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">Account Settings</h3>
+                  <p className="text-gray-600 text-sm">Manage your profile and preferences</p>
+                </div>
+              </div>
+
+              <div className="bg-white rounded-xl shadow-lg p-6">
+                <div className="flex items-center justify-between mb-6">
+                  <h2 className="text-xl font-bold text-gray-900">Recent Projects</h2>
+                  <button 
+                    onClick={() => setCurrentPage('home')}
+                    className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 flex items-center"
+                  >
+                    <Upload className="h-4 w-4 mr-2" />
+                    New Project
+                  </button>
+                </div>
+
+                <div className="overflow-x-auto">
+                  <table className="w-full">
+                    <thead>
+                      <tr className="border-b">
+                        <th className="text-left py-3 px-4 font-semibold text-gray-900">Project Name</th>
+                        <th className="text-left py-3 px-4 font-semibold text-gray-900">Date</th>
+                        <th className="text-left py-3 px-4 font-semibold text-gray-900">Credits Used</th>
+                        <th className="text-left py-3 px-4 font-semibold text-gray-900">Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {user?.projects.map((project) => (
+                        <tr key={project.id} className="border-b hover:bg-gray-50">
+                          <td className="py-4 px-4">
+                            <div className="flex items-center">
+                              <FileText className="h-5 w-5 text-gray-400 mr-3" />
+                              <div>
+                                <p className="font-medium text-gray-900">{project.name}</p>
+                                <p className="text-sm text-gray-500 truncate max-w-xs">
+                                  {project.content}
+                                </p>
+                              </div>
+                            </div>
+                          </td>
+                          <td className="py-4 px-4 text-gray-600">{project.date}</td>
+                          <td className="py-4 px-4 text-gray-600">{project.credits}</td>
+                          <td className="py-4 px-4">
+                            <div className="flex items-center space-x-2">
+                              <button 
+                                className="text-blue-600 hover:text-blue-800 p-1"
+                                title="View"
+                              >
+                                <Eye className="h-4 w-4" />
+                              </button>
+                              <button 
+                                className="text-green-600 hover:text-green-800 p-1"
+                                title="Download"
+                              >
+                                <Download className="h-4 w-4" />
+                              </button>
+                              <button 
+                                className="text-red-600 hover:text-red-800 p-1"
+                                title="Delete"
+                              >
+                                <Trash2 className="h-4 w-4" />
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {currentPage === 'payment' && (
+          <div className="min-h-screen bg-gray-50 py-12">
+            <div className="max-w-2xl mx-auto px-4">
+              <div className="bg-white rounded-2xl shadow-xl p-8">
+                <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Complete Your Payment</h2>
+                
+                <div className="border rounded-xl p-6 mb-8 bg-blue-50">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Pro Plan</h3>
+                  <p className="text-gray-600 mb-4">5,000 credits/month, Advanced AI algorithms</p>
+                  <div className="text-3xl font-bold text-blue-600">$19/month</div>
+                </div>
+
+                <form className="space-y-6">
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">Cardholder Name</label>
+                    <input
+                      type="text"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                      placeholder="John Doe"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">Card Number</label>
+                    <input
+                      type="text"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                      placeholder="1234 5678 9012 3456"
+                    />
+                  </div>
+                  <div className="grid grid-cols-2 gap-4">
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-2">Expiry Date</label>
+                      <input
+                        type="text"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                        placeholder="MM/YY"
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-2">CVV</label>
+                      <input
+                        type="text"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                        placeholder="123"
+                      />
+                    </div>
+                  </div>
+                  
+                  <div className="border-t pt-6">
+                    <h3 className="text-lg font-semibold text-gray-900 mb-4">Billing Address</h3>
+                    <div className="space-y-4">
+                      <input
+                        type="text"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                        placeholder="Street Address"
+                      />
+                      <div className="grid grid-cols-2 gap-4">
+                        <input
+                          type="text"
+                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                          placeholder="City"
+                        />
+                        <input
+                          type="text"
+                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                          placeholder="ZIP Code"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <button
+                    type="submit"
+                    className="w-full bg-blue-600 text-white py-4 px-4 rounded-lg hover:bg-blue-700 font-semibold text-lg"
+                  >
+                    Complete Payment - $19
+                  </button>
+                </form>
+
+                <div className="mt-6 text-center text-sm text-gray-500">
+                  <div className="flex items-center justify-center space-x-4 mb-2">
+                    <Shield className="h-4 w-4" />
+                    <span>256-bit SSL encryption</span>
+                  </div>
+                  <p>Your payment information is secure and encrypted</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
         {/* 其他页面类似处理... */}
       </div>
     );
